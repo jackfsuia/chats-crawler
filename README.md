@@ -8,7 +8,7 @@
 English | [简体中文](README_zh.md)
 </div>
 <!-- # chats-crawler -->
-Discourse chat data crawling and parsing for LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
+Discourse chat data crawling and parsing for easy LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
 
 ## Table of Contents
 
@@ -76,7 +76,7 @@ Besides, it is strange that there was no change in gpu memory even I deleted the
 Pytorch version is 0.4.0.2
 ...
 ```
-`<# ztf-ucasTengfei Zhang #>` and `<# smth #>` are the two posters' names, and are formatted this way for you to easily template it to instruction-finetune LLMs (e.g., maybe replace `<# smth #>` with `<assistant>`, and `<# ztf-ucasTengfei Zhang #>` with `<user>`, etc.).
+`<# ztf-ucasTengfei Zhang #>` and `<# smth #>` are the two posters' names, and are formatted this way for you to easily template it to instruction-finetune LLMs (e.g., maybe replace `<# smth #>` with `<assistant>`, and `<# ztf-ucasTengfei Zhang #>` with `<user>`, etc.). If there are images interspersed in the texts, they will not only be downloaded and saved in `storage/datasets/imgs` with a new FILENAME, but also replaced in place with `"[img FILENAME]"` in texts. If there are links interspersed in the texts, they will be replaced in place with `"[link LINK]"` in texts.
 ## Notice
 Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure. We are not responsible for any law risks and issues.
 
