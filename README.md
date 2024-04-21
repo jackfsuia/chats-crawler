@@ -1,5 +1,6 @@
-# chats-crawler
-
+<p align="center">
+    <img src="assets/logo.PNG" width="30%" >
+</p>
 <div align="center">
     
 [![GitHub Code License](https://img.shields.io/github/license/jackfsuia/chats-crawler)](LICENSE)
@@ -12,6 +13,7 @@ Discourse chat data crawling and parsing for LLM instruction finetuning. Data in
 ## Table of Contents
 
 - [Quick Start](#quick-start)
+- [Examples](#examples)
 - [Notice](#notice)
 - [Future Work](#future-work)
 - [License](#license)
