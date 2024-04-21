@@ -2,7 +2,7 @@
 
 <div align="center">
     
-[![GitHub Code License](https://img.shields.io/github/license/jackfsuia/Vecparser)](LICENSE)
+[![GitHub Code License](https://img.shields.io/github/license/jackfsuia/chats-crawler)](LICENSE)
 
 English | [简体中文](README_zh.md)
 </div>
