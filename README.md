@@ -32,7 +32,7 @@ To start crawling, run
 ```bash
 npm start
 ```
-That's all! The discourse chat data are saved at storage/datasets/default, and the images at storage/datasets/imgs.
+That's all! The discourse chat data are saved at `storage/datasets/default`, and the images at `storage/datasets/imgs`.
 
 ## Notice
 Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure. We are not responsible for any law risks and issues.
