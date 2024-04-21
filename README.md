@@ -26,7 +26,7 @@ Then install the requirements, run
 ```bash
 npm i
 ```
-Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org` there with your target **discourse-based** website. 
+Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org` there with your target [**Discourse-based**](https://github.com/discourse/discourse) website. 
 
 To start crawling, run
 ```bash
