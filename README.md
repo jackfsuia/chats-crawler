@@ -27,7 +27,7 @@ Then install the requirements, run
 ```bash
 npm i
 ```
-To start crawling, run
+To start crawling, read the [Notice](#Notice) before it, run
 ```bash
 npm start
 ```
