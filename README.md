@@ -28,13 +28,13 @@ npm i
 ```
 Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org`s there with your target [**Discourse-based**](https://github.com/discourse/discourse) website. A [**Discourse-based**](https://github.com/discourse/discourse) website basically all looks like this:
 
-<img src="assets/discourse.PNG">
+<img src="assets/discourse.PNG" width="61%">
 
 To start crawling, run
 ```bash
 npm start
 ```
-That's all! The discourse chat data are saved at `storage/datasets/default`, and the images at `storage/datasets/imgs`.
+That's all! The discourse chat data are saved at `storage/datasets/default` as .json files, and the images at `storage/datasets/imgs`.
 ## Examples
 Lets say we crawling https://discuss.pytorch.org. We should edit the [config.ts](config.ts) as:
 ```
@@ -45,9 +45,9 @@ rex: "https://discuss.pytorch.org/t/[^/]+/[0-9]+$",
 ```
 One of the chat page we have crawled might be this one:
 
-<img src="assets/conversation.PNG">
+<img src="assets/conversation.PNG" width="61%">
 
-then at one of the .json files in `storage/datasets/default`, the `conversation` inside will be
+then at one of the .json files in `storage/datasets/default`, the `"conversations"` property inside will be
 ```
 <# ztf-ucasTengfei Zhang #>:
 How to delete a Tensor in GPU to free up memory？
