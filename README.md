@@ -34,7 +34,7 @@ npm start
 That's all! The discourse chat data are saved at storage/datasets/default, and the images at storage/datasets/imgs.
 
 ## Notice
-Make sure the crawling is **legal**, check the website's robots.txt if you're not sure.
+Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure.
 
 ## Future Work
 - Support image data auto OCR to texts, then inserted among original texts data. It makes the data complete in text form, and save some space too if OCR happens when on the crawling, not post crawling.
