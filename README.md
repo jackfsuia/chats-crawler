@@ -1,5 +1,4 @@
 # chats-crawler
-Discourse chat data crawling and parsing for LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
 
 <div align="center">
     
@@ -27,7 +26,7 @@ Then install the requirements, run
 ```bash
 npm i
 ```
-To start crawling, read the [Notice](#Notice) before it, run
+Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs.  run
 ```bash
 npm start
 ```
