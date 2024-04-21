@@ -115,8 +115,9 @@ export async function crawl(config: Config) {
             conversations = conversations + `\n<# ${user_name} #>:\n`;
             let $ct = $('div.regular.contents', post);
 
-            // delete Reply, quote control
+            // delete Reply, Button, quote control
             $('.title', $ct).remove();
+            $('button', $ct).remove();
             $('span.d-button-label', $ct).remove();
 
             // image textualizing
