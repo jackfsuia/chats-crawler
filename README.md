@@ -26,14 +26,16 @@ Then install the requirements, run
 ```bash
 npm i
 ```
-Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs.  run
+Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org` there with your target **discourse-based** website. 
+
+To start crawling, run
 ```bash
 npm start
 ```
 That's all! The discourse chat data are saved at storage/datasets/default, and the images at storage/datasets/imgs.
 
 ## Notice
-Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure.
+Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure. We are not responsible for any law risks and issues.
 
 ## Future Work
 - Support image data auto OCR to texts, then inserted among original texts data. It makes the data complete in text form, and save some space too if OCR happens when on the crawling, not post crawling.
