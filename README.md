@@ -28,6 +28,7 @@ npm i
 ```
 Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org`s there with your target [**Discourse-based**](https://github.com/discourse/discourse) website. A [**Discourse-based**](https://github.com/discourse/discourse) website basically all looks like this:
 
+<img src="assets/discourse.PNG">
 
 To start crawling, run
 ```bash
@@ -43,6 +44,8 @@ Lets say we crawling https://discuss.pytorch.org. We should edit the [config.ts]
 rex: "https://discuss.pytorch.org/t/[^/]+/[0-9]+$",
 ```
 One of the chat page we have crawled might be this one:
+
+<img src="assets/conversation.PNG">
 
 then at one of the .json files in `storage/datasets/default`, the `conversation` inside will be
 ```
