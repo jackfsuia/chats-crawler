@@ -49,7 +49,7 @@ rex: "https://discuss.pytorch.org/t/[^/]+/[0-9]+$",
 
 <img src="assets/conversation.PNG" width="61%">
 
-然后相应json文件里的`"conversations"`内容应该是
+然后得到的相应json文件里的`"conversations"`内容应该是
 ```
 <# ztf-ucasTengfei Zhang #>:
 How to delete a Tensor in GPU to free up memory？
