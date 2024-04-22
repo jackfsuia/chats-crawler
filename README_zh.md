@@ -77,6 +77,8 @@ Pytorch version is 0.4.0.2
 ...
 ```
 其中`<# ztf-ucasTengfei Zhang #>`和`<# smth #>`是两位帖主的用户名, 自行把其分别替换成一般大模型指令模板里的`<user>`和`<assistant>`即可直接用于指令微调。对话里包含的图片都会下载保存在`storage/datasets/imgs`， 并且对话里会把相应的图片位置替换成`"[img 图片名]"`。 对 `"[link LINK]"` in texts. All the other elements are deleted.
+
+*觉得有用的话，点颗星呗 :star: ，谢谢~~*
 ## 注意事项
 请确保此爬取是合法的，如果你不确定，请检查该网站的robots.txt和其他相关信息源。我们不承担由此产生的任何法律风险和问题。
 
