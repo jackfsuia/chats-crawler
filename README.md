@@ -85,7 +85,7 @@ Make sure by yourself the crawling is **legal**, check the website's robots.txt 
   
 ## License
 
-chats-crawler is licensed under the Apache 2.0 License found in the [LICENSE](LICENSE) file in the root directory of this repository.
+chats-crawler is licensed under the MIT License found in the [LICENSE](LICENSE) file in the root directory of this repository.
 
 ## Citation
 
