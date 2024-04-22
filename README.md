@@ -76,7 +76,7 @@ Besides, it is strange that there was no change in gpu memory even I deleted the
 Pytorch version is 0.4.0.2
 ...
 ```
-`<# ztf-ucasTengfei Zhang #>` and `<# smth #>` are the two posters' names, and are formatted this way for you to easily template it to instruction-finetune LLMs (e.g., maybe replace `<# smth #>` with `<assistant>`, and `<# ztf-ucasTengfei Zhang #>` with `<user>`, etc.). If there are images interspersed in the texts, they will not only be downloaded and saved in `storage/datasets/imgs` with a new FILENAME, but also replaced in place with `"[img FILENAME]"` in texts. If there are links interspersed in the texts, they will be replaced in place with `"[link LINK]"` in texts.
+`<# ztf-ucasTengfei Zhang #>` and `<# smth #>` are the two posters' names, and are formatted this way for you to easily template it to instruction-finetune LLMs (e.g., maybe replace `<# smth #>` with `<assistant>`, and `<# ztf-ucasTengfei Zhang #>` with `<user>`, etc.). If there are images interspersed in the texts, they will not only be downloaded and saved in `storage/datasets/imgs` with a new FILENAME, but also replaced in place with `"[img FILENAME]"` in texts. If there are links interspersed in the texts, they will be replaced in place with `"[link LINK]"` in texts. All the other elements are deleted.
 ## Notice
 Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure. We are not responsible for any law risks and issues.
 
