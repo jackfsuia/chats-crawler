@@ -68,7 +68,7 @@ torch.cuda.empty_cache()
               "
 
 <# smth #>:
-del Tensor will delete it from GPU memory. Why do you think it doesn’t work?7
+del Tensor will delete it from GPU memory. Why do you think it doesn’t work?
 <# ztf-ucasTengfei Zhang #>:
 Thank you very much!
 I loaded an OrderedDict of pre-trained weights to gpu by torch.load(), then used a for loop to delete its elements, but there was no change in gpu memory.
