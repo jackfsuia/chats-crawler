@@ -76,7 +76,7 @@ Besides, it is strange that there was no change in gpu memory even I deleted the
 Pytorch version is 0.4.0.2
 ...
 ```
-其中`<# ztf-ucasTengfei Zhang #>`和`<# smth #>`是两位帖主的用户名, 自行把其分别替换成一般大模型指令模板里的`<user>`和`<assistant>`即可直接用于指令微调。对话里包含的图片都会下载保存在`storage/datasets/imgs`， 并且对话里会把相应的图片位置替换成`"[img 图片名]"`。 对 `"[link LINK]"` in texts. All the other elements are deleted.
+其中`<# ztf-ucasTengfei Zhang #>`和`<# smth #>`是两位帖主的用户名, 自行把其分别替换成一般大模型指令模板里的`<user>`和`<assistant>`即可直接用于指令微调。对话里包含的图片都会下载保存在`storage/datasets/imgs`， 并且对话里会把相应的图片位置替换成`[img 图片名]`。 对话里提到的链接会被 `[link 链接]` 替换。 其他无关元素会被完全过滤掉。
 
 *觉得有用的话，点颗星呗 :star: ，谢谢~~*
 ## 注意事项
