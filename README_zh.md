@@ -8,48 +8,48 @@
 [English](README.md) | 简体中文
 </div>
 <!-- # chats-crawler -->
-Discourse chat data crawling and parsing for direct LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
+Discourse 类型论坛网站的对话数据爬取和解析，以直接用于大型语言模型（LLM）指令微调。数据包括文本、图片（多模态指令微调）和链接。不久将支持更多聊天对话网站。
 
 ## Table of Contents
 
-- [Quick Start](#quick-start)
-- [Examples](#examples)
-- [Notice](#notice)
-- [Future Work](#future-work)
-- [License](#license)
-- [Citation](#citation)
-- [Acknowledgement](#acknowledgement)
-## Quick Start
-Run
+- [快速开始](#快速开始)
+- [示例](#示例)
+- [注意事项](#注意事项)
+- [未来工作](#未来工作)
+- [许可证](#许可证)
+- [引用](#引用)
+- [致谢](#致谢)
+## 快速开始
+运行
 ```bash
 git clone https://github.com/jackfsuia/chats-crawler.git
 ```
-Then install the requirements, run
+然后运行下面命令安装依赖
 ```bash
 npm i
 ```
-Before crawling, please read the [Notice](#Notice). Config the target website at [config.ts](config.ts), edit the `url` and `rex` properties to match your needs, i.e., replace the two `https://discuss.pytorch.org`s there with your target [**Discourse-based**](https://github.com/discourse/discourse) website. A [**Discourse-based**](https://github.com/discourse/discourse) website basically all looks like this:
+在开始爬取之前，请阅读[注意事项](#注意事项)。 在[config.ts](config.ts)配置目标网站，编辑url和rex属性以满足你的需求， 把其中的两个https://discuss.pytorch.org替换为您的目标网站。目标网站必须是基于[**Discourse**](https://github.com/discourse/discourse)构建的。  [**Discourse**](https://github.com/discourse/discourse)构建的网站基本都长下面这样:
 
 <img src="assets/discourse.PNG" width="61%">
 
-To start crawling, run
+运行下面命令开始爬取和解析
 ```bash
 npm start
 ```
-That's all! The discourse chat data are saved at `storage/datasets/default` as .json files, and the images at `storage/datasets/imgs`.
-## Examples
-Lets say we crawling https://discuss.pytorch.org. We should edit the [config.ts](config.ts) as:
+大功告成! 一条条的对话数据会分别作为json文件保存在 `storage/datasets/default` , 其中的图片保存在 `storage/datasets/imgs`.
+## 示例
+比如想爬取https://discuss.pytorch.org网站. 修改[config.ts](config.ts)文件的两个地方:
 ```
 ...
  url: "https://discuss.pytorch.org/",
 ...
 rex: "https://discuss.pytorch.org/t/[^/]+/[0-9]+$",
 ```
-One of the chat page we have crawled might be this one:
+可能我们中途会爬到类似下面的网站
 
 <img src="assets/conversation.PNG" width="61%">
 
-then at one of the .json files in `storage/datasets/default`, the `"conversations"` property inside will be
+然后相应json文件里的`"conversations"`内容应该是
 ```
 <# ztf-ucasTengfei Zhang #>:
 How to delete a Tensor in GPU to free up memory？
@@ -76,18 +76,18 @@ Besides, it is strange that there was no change in gpu memory even I deleted the
 Pytorch version is 0.4.0.2
 ...
 ```
-`<# ztf-ucasTengfei Zhang #>` and `<# smth #>` are the two posters' names, and are formatted this way for you to easily template it to instruction-finetune LLMs (e.g., maybe replace `<# smth #>` with `<assistant>`, and `<# ztf-ucasTengfei Zhang #>` with `<user>`, etc.). If there are images interspersed in the texts, they will not only be downloaded and saved in `storage/datasets/imgs` with a new FILENAME, but also replaced in place with `"[img FILENAME]"` in texts. If there are links interspersed in the texts, they will be replaced in place with `"[link LINK]"` in texts. All the other elements are deleted.
-## Notice
-Make sure by yourself the crawling is **legal**, check the website's robots.txt if you're not sure. We are not responsible for any law risks and issues.
+其中`<# ztf-ucasTengfei Zhang #>`和`<# smth #>`是两位帖主的用户名, 自行把其分别替换成一般大模型指令模板里的`<user>`和`<assistant>`即可直接用于指令微调。对话里包含的图片都会下载保存在`storage/datasets/imgs`， 并且对话里会把相应的图片位置替换成`"[img 图片名]"`。 对 `"[link LINK]"` in texts. All the other elements are deleted.
+## 注意事项
+请确保此爬取是合法的，如果你不确定，请检查该网站的robots.txt和其他相关信息源。我们不承担由此产生的任何法律风险和问题。
 
-## Future Work
+## 未来工作
 - Support image data auto OCR to texts, then inserted among original texts data. It makes the data complete in text form, and save some space too if OCR happens when on the crawling, not post crawling.
   
-## License
+## 许可证
 
 chats-crawler is licensed under the Apache 2.0 License found in the [LICENSE](LICENSE) file in the root directory of this repository.
 
-## Citation
+## 引用
 
 If this work is helpful, please kindly cite as:
 
@@ -99,6 +99,6 @@ If this work is helpful, please kindly cite as:
   url={https://github.com/jackfsuia/chats-crawler}
 }
 ```
-## Acknowledgement
+## 致谢
 
 Learned a lot from [gpt-crawler](https://github.com/BuilderIO/gpt-crawler) and [crawlee](https://github.com/apify/crawlee). Thanks for their wonderful works.
