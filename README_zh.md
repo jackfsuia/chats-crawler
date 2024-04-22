@@ -81,15 +81,14 @@ Pytorch version is 0.4.0.2
 请确保此爬取是合法的，如果你不确定，请检查该网站的robots.txt和其他相关信息源。我们不承担由此产生的任何法律风险和问题。
 
 ## 未来工作
-- Support image data auto OCR to texts, then inserted among original texts data. It makes the data complete in text form, and save some space too if OCR happens when on the crawling, not post crawling.
+- 将支持图片数据OCR成文本，插入原始对话流中。
   
 ## 许可证
 
-chats-crawler is licensed under the Apache 2.0 License found in the [LICENSE](LICENSE) file in the root directory of this repository.
-
+chats-crawler许可证文件在[MIT许可证](LICENSE)。
 ## 引用
 
-If this work is helpful, please kindly cite as:
+如果这项工作对您有帮助，请引用
 
 ```bibtex
 @article{chats-crawler,
@@ -101,4 +100,4 @@ If this work is helpful, please kindly cite as:
 ```
 ## 致谢
 
-Learned a lot from [gpt-crawler](https://github.com/BuilderIO/gpt-crawler) and [crawlee](https://github.com/apify/crawlee). Thanks for their wonderful works.
+本项目基于[gpt-crawler](https://github.com/BuilderIO/gpt-crawler)和[crawlee](https://github.com/apify/crawlee)。感谢他们的工作。
