@@ -8,7 +8,8 @@
 English | [简体中文](README_zh.md)
 </div>
 <!-- # chats-crawler -->
-Discourse chat data crawling and parsing straight for LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
+
+[**Discourse**](https://github.com/discourse/discourse) chat data crawling and parsing straight for LLM instruction finetuning. Data include the texts, images (crucial for multimodal finetuning) and links. Will support more than Discourse-based websites soon.
 
 ## Table of Contents
 
