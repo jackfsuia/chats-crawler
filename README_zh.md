@@ -8,7 +8,8 @@
 [English](README.md) | 简体中文
 </div>
 <!-- # chats-crawler -->
-Discourse 类型论坛网站的对话数据爬取和解析，以直接用于大型语言模型（LLM）指令微调。数据包括文本、图片（多模态指令微调）和链接。不久将支持更多聊天对话网站。
+
+[**Discourse**](https://github.com/discourse/discourse) 类型论坛网站的对话数据爬取和解析，以直接用于大型语言模型（LLM）指令微调。数据包括文本、图片（多模态指令微调）和链接。不久将支持更多聊天对话网站。
 
 ## Table of Contents
 
@@ -28,7 +29,7 @@ git clone https://github.com/jackfsuia/chats-crawler.git
 ```bash
 npm i
 ```
-在开始爬取之前，请阅读[注意事项](#注意事项)。 在[config.ts](config.ts)配置目标网站，编辑url和rex属性以满足你的需求， 把其中的两个https://discuss.pytorch.org替换为您的目标网站。目标网站必须是基于[**Discourse**](https://github.com/discourse/discourse)构建的。  [**Discourse**](https://github.com/discourse/discourse)构建的网站基本都长下面这样:
+在开始爬取之前，请阅读[注意事项](#注意事项)。 在[config.ts](config.ts)配置目标网站，编辑url和rex属性以满足你的需求， 把其中夹杂的两个"https://discuss.pytorch.org"字符串替换为您的目标网站。目标网站必须是基于[**Discourse**](https://github.com/discourse/discourse)构建的。  [**Discourse**](https://github.com/discourse/discourse)构建的网站基本都长下面这样:
 
 <img src="assets/discourse.PNG" width="61%">
 
