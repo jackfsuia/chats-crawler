@@ -23,7 +23,7 @@
 ## 快速开始
 运行
 ```bash
-git clone https://github.com/jackfsuia/chats-crawler.git
+git clone https://github.com/jackfsuia/chats-crawler.git && cd chats-crawler
 ```
 然后运行下面命令安装依赖
 ```bash
