@@ -23,7 +23,7 @@ English | [简体中文](README_zh.md)
 ## Quick Start
 Run
 ```bash
-git clone https://github.com/jackfsuia/chats-crawler.git
+git clone https://github.com/jackfsuia/chats-crawler.git && cd chats-crawler
 ```
 Then install the requirements, run
 ```bash
